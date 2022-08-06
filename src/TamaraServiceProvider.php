@@ -27,10 +27,7 @@ class TamaraServiceProvider extends PackageServiceProvider
             return NotificationService::create(config('tamara.notification_token'));
         });
 
-
         $this->app->singleton(MerchantUrl::class, function () {
-
-
             $merchantUrl = new MerchantUrl();
 
             $merchantUrl->setSuccessUrl(config('tamara.success_url'));
