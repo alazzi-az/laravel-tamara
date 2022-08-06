@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace AlazziAz\Tamara\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class TamaraCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-tamara';
 
     public $description = 'My command';
 
