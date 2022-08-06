@@ -9,7 +9,9 @@ use AlazziAz\Tamara\Tamara\Model\Money;
 class Discount
 {
     public const
-        NAME = 'name',
+        NAME = 'name';
+
+    public const
         AMOUNT = 'amount';
 
     /**
@@ -60,7 +62,7 @@ class Discount
     public function toArray(): array
     {
         return [
-            self::NAME   => $this->getName(),
+            self::NAME => $this->getName(),
             self::AMOUNT => $this->getAmount()->toArray(),
         ];
     }

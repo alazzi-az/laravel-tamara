@@ -10,10 +10,18 @@ use AlazziAz\Tamara\Tamara\Model\Order\OrderItemCollection;
 class CancelOrderRequest
 {
     private const
-        TOTAL_AMOUNT = 'total_amount',
-        TAX_AMOUNT = 'tax_amount',
-        SHIPPING_AMOUNT = 'shipping_amount',
-        DISCOUNT_AMOUNT = 'discount_amount',
+        TOTAL_AMOUNT = 'total_amount';
+
+    private const
+        TAX_AMOUNT = 'tax_amount';
+
+    private const
+        SHIPPING_AMOUNT = 'shipping_amount';
+
+    private const
+        DISCOUNT_AMOUNT = 'discount_amount';
+
+    private const
         ITEMS = 'items';
 
     /**

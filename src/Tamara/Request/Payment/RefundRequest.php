@@ -51,7 +51,7 @@ class RefundRequest
         }
 
         return [
-            Order::ORDER_ID           => $this->getOrderId(),
+            Order::ORDER_ID => $this->getOrderId(),
             Refund::REFUND_COLLECTION => $refunds,
         ];
     }

@@ -11,7 +11,9 @@ use AlazziAz\Tamara\Tamara\Model\Order\OrderItemCollection;
 class Refund
 {
     public const
-        REFUND_ID = 'refund_id',
+        REFUND_ID = 'refund_id';
+
+    public const
         REFUND_COLLECTION = 'refunds';
 
     /**
@@ -93,11 +95,11 @@ class Refund
     public function toArray(): array
     {
         return [
-            Capture::CAPTURE_ID    => $this->getCaptureId(),
-            Order::TOTAL_AMOUNT    => $this->getTotalAmount()->toArray(),
-            Order::ITEMS           => $this->getItems()->toArray(),
+            Capture::CAPTURE_ID => $this->getCaptureId(),
+            Order::TOTAL_AMOUNT => $this->getTotalAmount()->toArray(),
+            Order::ITEMS => $this->getItems()->toArray(),
             Order::SHIPPING_AMOUNT => $this->getShippingAmount()->toArray(),
-            Order::TAX_AMOUNT      => $this->getTaxAmount()->toArray(),
+            Order::TAX_AMOUNT => $this->getTaxAmount()->toArray(),
             Order::DISCOUNT_AMOUNT => $this->getDiscountAmount()->toArray(),
         ];
     }

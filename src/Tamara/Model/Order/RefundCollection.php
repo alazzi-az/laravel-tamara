@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace AlazziAz\Tamara\Tamara\Model\Order;
+
 use ArrayIterator;
 
 class RefundCollection

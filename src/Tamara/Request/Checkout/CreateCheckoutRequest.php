@@ -25,5 +25,4 @@ class CreateCheckoutRequest
     {
         return $this->order;
     }
-
 }

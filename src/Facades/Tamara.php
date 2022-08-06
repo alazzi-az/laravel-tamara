@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \AlazziAz\Tamara\Tamara
+ *
  * @method static \AlazziAz\Tamara\Tamara\Client client()
  * @method static \AlazziAz\Tamara\Tamara\Notification\NotificationService notificationService()
  */

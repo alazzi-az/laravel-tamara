@@ -2,9 +2,9 @@
 
 namespace AlazziAz\Tamara\Tests;
 
+use AlazziAz\Tamara\TamaraServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AlazziAz\Tamara\TamaraServiceProvider;
 
 class TestCase extends Orchestra
 {

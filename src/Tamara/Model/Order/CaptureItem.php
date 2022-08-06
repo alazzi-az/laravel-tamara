@@ -12,15 +12,33 @@ use DateTimeImmutable;
 class CaptureItem
 {
     private const
-        CAPTURE_ID = 'capture_id',
-        ORDER_ID = 'order_id',
-        TOTAL_AMOUNT = 'total_amount',
-        REFUNDED_AMOUNT = 'refunded_amount',
-        TAX_AMOUNT = 'tax_amount',
-        SHIPPING_AMOUNT = 'shipping_amount',
-        DISCOUNT_AMOUNT = 'discount_amount',
-        SHIPPING_INFO = 'shipping_info',
-        ITEMS = 'items',
+        CAPTURE_ID = 'capture_id';
+
+    private const
+        ORDER_ID = 'order_id';
+
+    private const
+        TOTAL_AMOUNT = 'total_amount';
+
+    private const
+        REFUNDED_AMOUNT = 'refunded_amount';
+
+    private const
+        TAX_AMOUNT = 'tax_amount';
+
+    private const
+        SHIPPING_AMOUNT = 'shipping_amount';
+
+    private const
+        DISCOUNT_AMOUNT = 'discount_amount';
+
+    private const
+        SHIPPING_INFO = 'shipping_info';
+
+    private const
+        ITEMS = 'items';
+
+    private const
         CREATED_AT = 'created_at';
 
     /**
@@ -193,17 +211,16 @@ class CaptureItem
     public function toArray(): array
     {
         return [
-            self::CAPTURE_ID      => $this->getCaptureId(),
-            self::ORDER_ID        => $this->getOrderId(),
-            self::TOTAL_AMOUNT    => $this->getTotalAmount()->toArray(),
+            self::CAPTURE_ID => $this->getCaptureId(),
+            self::ORDER_ID => $this->getOrderId(),
+            self::TOTAL_AMOUNT => $this->getTotalAmount()->toArray(),
             self::REFUNDED_AMOUNT => $this->getRefundedAmount()->toArray(),
             self::SHIPPING_AMOUNT => $this->getShippingAmount()->toArray(),
-            self::TAX_AMOUNT      => $this->getTaxAmount()->toArray(),
+            self::TAX_AMOUNT => $this->getTaxAmount()->toArray(),
             self::DISCOUNT_AMOUNT => $this->getDiscountAmount()->toArray(),
-            self:: SHIPPING_INFO  => $this->getShippingInfo()->toArray(),
-            self::ITEMS           => $this->getItems()->toArray(),
-            self::CREATED_AT      => $this->getCreatedAt()->format(DateTime::ATOM),
+            self::SHIPPING_INFO => $this->getShippingInfo()->toArray(),
+            self::ITEMS => $this->getItems()->toArray(),
+            self::CREATED_AT => $this->getCreatedAt()->format(DateTime::ATOM),
         ];
     }
-
 }

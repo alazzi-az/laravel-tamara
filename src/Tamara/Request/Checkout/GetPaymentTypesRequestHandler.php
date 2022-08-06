@@ -14,7 +14,7 @@ class GetPaymentTypesRequestHandler extends AbstractRequestHandler
     public function __invoke(GetPaymentTypesRequest $request)
     {
         $data = ['country' => $request->getCountryCode()];
-        if (!empty($request->getCurrency())) {
+        if (! empty($request->getCurrency())) {
             $data['currency'] = $request->getCurrency();
         }
 

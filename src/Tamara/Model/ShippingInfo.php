@@ -9,9 +9,15 @@ use DateTimeImmutable;
 class ShippingInfo
 {
     public const
-        SHIPPED_AT = 'shipped_at',
-        SHIPPING_COMPANY = 'shipping_company',
-        TRACKING_NUMBER = 'tracking_number',
+        SHIPPED_AT = 'shipped_at';
+
+    public const
+        SHIPPING_COMPANY = 'shipping_company';
+
+    public const
+        TRACKING_NUMBER = 'tracking_number';
+
+    public const
         TRACKING_URL = 'tracking_url';
 
     /**
@@ -98,10 +104,10 @@ class ShippingInfo
     public function toArray(): array
     {
         return [
-            self::SHIPPED_AT       => $this->getShippedAt()->format(\DateTime::ATOM),
+            self::SHIPPED_AT => $this->getShippedAt()->format(\DateTime::ATOM),
             self::SHIPPING_COMPANY => $this->getShippingCompany(),
-            self::TRACKING_NUMBER  => $this->getTrackingNumber(),
-            self::TRACKING_URL     => $this->getTrackingUrl(),
+            self::TRACKING_NUMBER => $this->getTrackingNumber(),
+            self::TRACKING_URL => $this->getTrackingUrl(),
         ];
     }
 }

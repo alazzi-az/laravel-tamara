@@ -9,29 +9,75 @@ use AlazziAz\Tamara\Tamara\Model\Money;
 class Order
 {
     public const
-        ORDER_ID = 'order_id',
-        TOTAL_AMOUNT = 'total_amount',
-        ITEMS = 'items',
-        CONSUMER = 'consumer',
-        BILLING_ADDRESS = 'billing_address',
-        SHIPPING_ADDRESS = 'shipping_address',
-        DISCOUNT = 'discount',
-        TAX_AMOUNT = 'tax_amount',
-        SHIPPING_AMOUNT = 'shipping_amount',
-        MERCHANT_URL = 'merchant_url',
-        PAYMENT_TYPE = 'payment_type',
-        ORDER_REFERENCE_ID = 'order_reference_id',
-        ORDER_NUMBER = 'order_number',
-        DESCRIPTION = 'description',
-        COUNTRY_CODE = 'country_code',
-        LOCALE = 'locale',
-        PLATFORM = 'platform',
-        DISCOUNT_AMOUNT = 'discount_amount',
-        RISK_ASSESSMENT = 'risk_assessment',
-        INSTALMENTS = 'instalments',
-        EXPIRY_TIME = 'expires_in_minutes',
-        PAY_BY_INSTALMENTS = 'PAY_BY_INSTALMENTS',
-        PAY_BY_LATER = 'PAY_BY_LATER',
+        ORDER_ID = 'order_id';
+
+    public const
+        TOTAL_AMOUNT = 'total_amount';
+
+    public const
+        ITEMS = 'items';
+
+    public const
+        CONSUMER = 'consumer';
+
+    public const
+        BILLING_ADDRESS = 'billing_address';
+
+    public const
+        SHIPPING_ADDRESS = 'shipping_address';
+
+    public const
+        DISCOUNT = 'discount';
+
+    public const
+        TAX_AMOUNT = 'tax_amount';
+
+    public const
+        SHIPPING_AMOUNT = 'shipping_amount';
+
+    public const
+        MERCHANT_URL = 'merchant_url';
+
+    public const
+        PAYMENT_TYPE = 'payment_type';
+
+    public const
+        ORDER_REFERENCE_ID = 'order_reference_id';
+
+    public const
+        ORDER_NUMBER = 'order_number';
+
+    public const
+        DESCRIPTION = 'description';
+
+    public const
+        COUNTRY_CODE = 'country_code';
+
+    public const
+        LOCALE = 'locale';
+
+    public const
+        PLATFORM = 'platform';
+
+    public const
+        DISCOUNT_AMOUNT = 'discount_amount';
+
+    public const
+        RISK_ASSESSMENT = 'risk_assessment';
+
+    public const
+        INSTALMENTS = 'instalments';
+
+    public const
+        EXPIRY_TIME = 'expires_in_minutes';
+
+    public const
+        PAY_BY_INSTALMENTS = 'PAY_BY_INSTALMENTS';
+
+    public const
+        PAY_BY_LATER = 'PAY_BY_LATER';
+
+    public const
         ADDITIONAL_DATA = 'additional_data';
 
     /**
@@ -400,22 +446,22 @@ class Order
     {
         $result = [
             self::ORDER_REFERENCE_ID => $this->getOrderReferenceId(),
-            self::ORDER_NUMBER       => $this->getOrderNumber(),
-            self::TOTAL_AMOUNT       => $this->getTotalAmount()->toArray(),
-            self::DESCRIPTION        => $this->getDescription(),
-            self::COUNTRY_CODE       => $this->getCountryCode(),
-            self::PAYMENT_TYPE       => $this->getPaymentType(),
-            self::LOCALE             => $this->getLocale(),
-            self::ITEMS              => $this->getItems()->toArray(),
-            self::CONSUMER           => $this->getConsumer()->toArray(),
-            self::BILLING_ADDRESS    => $this->getBillingAddress()->toArray(),
-            self::SHIPPING_ADDRESS   => $this->getShippingAddress()->toArray(),
-            self::DISCOUNT           => $this->getDiscount()->toArray(),
-            self::TAX_AMOUNT         => $this->getTaxAmount()->toArray(),
-            self::SHIPPING_AMOUNT    => $this->getShippingAmount()->toArray(),
-            self::MERCHANT_URL       => $this->getMerchantUrl()->toArray(),
-            self::PLATFORM           => $this->getPlatform(),
-            self::RISK_ASSESSMENT    => $this->getRiskAssessment()->getData(),
+            self::ORDER_NUMBER => $this->getOrderNumber(),
+            self::TOTAL_AMOUNT => $this->getTotalAmount()->toArray(),
+            self::DESCRIPTION => $this->getDescription(),
+            self::COUNTRY_CODE => $this->getCountryCode(),
+            self::PAYMENT_TYPE => $this->getPaymentType(),
+            self::LOCALE => $this->getLocale(),
+            self::ITEMS => $this->getItems()->toArray(),
+            self::CONSUMER => $this->getConsumer()->toArray(),
+            self::BILLING_ADDRESS => $this->getBillingAddress()->toArray(),
+            self::SHIPPING_ADDRESS => $this->getShippingAddress()->toArray(),
+            self::DISCOUNT => $this->getDiscount()->toArray(),
+            self::TAX_AMOUNT => $this->getTaxAmount()->toArray(),
+            self::SHIPPING_AMOUNT => $this->getShippingAmount()->toArray(),
+            self::MERCHANT_URL => $this->getMerchantUrl()->toArray(),
+            self::PLATFORM => $this->getPlatform(),
+            self::RISK_ASSESSMENT => $this->getRiskAssessment()->getData(),
         ];
 
         if ($this->getInstalments() > 0 && $this->isInstalments()) {

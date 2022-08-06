@@ -20,11 +20,11 @@ class RequestException extends Exception implements RequestExceptionInterface
     protected $response;
 
     /**
-     * @param string                 $message
-     * @param int                    $code
-     * @param RequestInterface       $request
-     * @param null|ResponseInterface $response
-     * @param Exception|null        $previous
+     * @param  string  $message
+     * @param  int  $code
+     * @param  RequestInterface  $request
+     * @param  null|ResponseInterface  $response
+     * @param  Exception|null  $previous
      */
     public function __construct(
         string $message,

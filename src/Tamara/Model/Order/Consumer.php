@@ -7,12 +7,24 @@ namespace AlazziAz\Tamara\Tamara\Model\Order;
 class Consumer
 {
     public const
-        FIRST_NAME = 'first_name',
-        LAST_NAME = 'last_name',
-        EMAIL = 'email',
-        PHONE_NUMBER = 'phone_number',
-        NATIONAL_ID = 'national_id',
-        DATE_OF_BIRTH = 'date_of_birth',
+        FIRST_NAME = 'first_name';
+
+    public const
+        LAST_NAME = 'last_name';
+
+    public const
+        EMAIL = 'email';
+
+    public const
+        PHONE_NUMBER = 'phone_number';
+
+    public const
+        NATIONAL_ID = 'national_id';
+
+    public const
+        DATE_OF_BIRTH = 'date_of_birth';
+
+    public const
         IS_FIRST_ORDER = 'is_first_order';
 
     /**
@@ -151,12 +163,12 @@ class Consumer
     public function toArray(): array
     {
         return [
-            self::FIRST_NAME     => $this->getFirstName(),
-            self::LAST_NAME      => $this->getLastName(),
-            self::EMAIL          => $this->getEmail(),
-            self::PHONE_NUMBER   => $this->getPhoneNumber(),
-            self::NATIONAL_ID    => $this->getNationalId(),
-            self::DATE_OF_BIRTH  => $this->getDateOfBirth(),
+            self::FIRST_NAME => $this->getFirstName(),
+            self::LAST_NAME => $this->getLastName(),
+            self::EMAIL => $this->getEmail(),
+            self::PHONE_NUMBER => $this->getPhoneNumber(),
+            self::NATIONAL_ID => $this->getNationalId(),
+            self::DATE_OF_BIRTH => $this->getDateOfBirth(),
             self::IS_FIRST_ORDER => $this->getIsFirstOrder(),
         ];
     }

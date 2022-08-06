@@ -7,9 +7,9 @@ return [
     'notification_token' => env('TAMARA_NOTIFICATION_TOKEN'),
     'request_timeout' => env('TAMARA_REQUEST_TIMEOUT', 10),
     'transport' => null,
-    'success_url'=>'',
-    'failure_url'=>'',
-    'cancel_url'=>'',
-    'notification_url'=>'',
+    'success_url' => '',
+    'failure_url' => '',
+    'cancel_url' => '',
+    'notification_url' => '',
 
 ];

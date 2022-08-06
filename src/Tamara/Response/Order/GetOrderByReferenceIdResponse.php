@@ -17,25 +17,63 @@ use DateTimeImmutable;
 class GetOrderByReferenceIdResponse extends ClientResponse
 {
     private const
-        ORDER_ID = 'order_id',
-        ORDER_REFERENCE_ID = 'order_reference_id',
-        ORDER_NUMBER = 'order_number',
-        CONSUMER = 'consumer',
-        STATUS = 'status',
-        BILLING_ADDRESS = 'billing_address',
-        SHIPPING_ADDRESS = 'shipping_address',
-        PAYMENT_TYPE = 'payment_type',
-        TOTAL_AMOUNT = 'total_amount',
-        REFUNDED_AMOUNT = 'refunded_amount',
-        CAPTURED_AMOUNT = 'captured_amount',
-        TAX_AMOUNT = 'tax_amount',
-        SHIPPING_AMOUNT = 'shipping_amount',
-        DISCOUNT_AMOUNT = 'discount_amount',
-        CANCELED_AMOUNT = 'canceled_amount',
-        ITEMS = 'items',
-        SETTLEMENT_STATUS = 'settlement_status',
-        SETTLEMENT_DATE = 'settlement_date',
-        CREATED_AT = 'created_at',
+        ORDER_ID = 'order_id';
+
+    private const
+        ORDER_REFERENCE_ID = 'order_reference_id';
+
+    private const
+        ORDER_NUMBER = 'order_number';
+
+    private const
+        CONSUMER = 'consumer';
+
+    private const
+        STATUS = 'status';
+
+    private const
+        BILLING_ADDRESS = 'billing_address';
+
+    private const
+        SHIPPING_ADDRESS = 'shipping_address';
+
+    private const
+        PAYMENT_TYPE = 'payment_type';
+
+    private const
+        TOTAL_AMOUNT = 'total_amount';
+
+    private const
+        REFUNDED_AMOUNT = 'refunded_amount';
+
+    private const
+        CAPTURED_AMOUNT = 'captured_amount';
+
+    private const
+        TAX_AMOUNT = 'tax_amount';
+
+    private const
+        SHIPPING_AMOUNT = 'shipping_amount';
+
+    private const
+        DISCOUNT_AMOUNT = 'discount_amount';
+
+    private const
+        CANCELED_AMOUNT = 'canceled_amount';
+
+    private const
+        ITEMS = 'items';
+
+    private const
+        SETTLEMENT_STATUS = 'settlement_status';
+
+    private const
+        SETTLEMENT_DATE = 'settlement_date';
+
+    private const
+        CREATED_AT = 'created_at';
+
+    private const
         TRANSACTIONS = 'transactions';
 
     /**
@@ -250,7 +288,7 @@ class GetOrderByReferenceIdResponse extends ClientResponse
 
     protected function parse(array $responseData): void
     {
-        $settlementDate = !empty($responseData[self::SETTLEMENT_DATE])
+        $settlementDate = ! empty($responseData[self::SETTLEMENT_DATE])
             ? new DateTimeImmutable($responseData[self::SETTLEMENT_DATE])
             : null;
 
