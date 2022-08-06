@@ -1,5 +1,4 @@
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
 
 # Laravel wrapper for [Tamara SDK](https://github.com/tamara-solution/php-sdk)
 
@@ -61,13 +60,13 @@ use \AlazziAz\Tamara\Facades\Tamara;
 $notificationService = Tamara::notificationService();
 $message = $notificationService->processAuthoriseNotification();
 ```
-## Usage Some  Instance by Laravel Container
+## Usage Some  Instance by Laravel Container to get the instance injected config values
 
 ```php
 use Illuminate\Support\Facades\App;
 use AlazziAz\Tamara\Tamara\Model\Order\MerchantUrl;
 
-$merchantUrl = App::make(MerchantUrl::class);
+$merchantUrl = App::make(MerchantUrl::class); // app()->make(MerchantUrl::class);
 ```
 
 ## Testing
