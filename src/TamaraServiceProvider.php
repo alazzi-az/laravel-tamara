@@ -29,7 +29,7 @@ class TamaraServiceProvider extends PackageServiceProvider
             return NotificationService::create(config('tamara.notification_token'));
         });
 
-        $this->app->singleton('tamara-merchant-url', function () {
+        $this->app->singleton(MerchantUrl::class, function () {
 
             $merchantUrl = new MerchantUrl();
 
