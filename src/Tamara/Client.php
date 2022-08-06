@@ -51,8 +51,7 @@ class Client
     private $requestDispatcher;
 
     /**
-     * @param Configuration $configuration
-     *
+     * @param  Configuration  $configuration
      * @return Client
      */
     public static function create(Configuration $configuration): Client
@@ -61,7 +60,7 @@ class Client
     }
 
     /**
-     * @param HttpClient $httpClient
+     * @param  HttpClient  $httpClient
      */
     public function __construct(HttpClient $httpClient)
     {
@@ -70,9 +69,8 @@ class Client
     }
 
     /**
-     * @param string $countryCode
-     * @param string $currency
-     *
+     * @param  string  $countryCode
+     * @param  string  $currency
      * @return GetPaymentTypesResponse
      *
      * @throws RequestDispatcherException
@@ -83,8 +81,7 @@ class Client
     }
 
     /**
-     * @param GetPaymentTypesV2Request $request
-     *
+     * @param  GetPaymentTypesV2Request  $request
      * @return GetPaymentTypesResponse
      *
      * @throws RequestDispatcherException
@@ -95,8 +92,7 @@ class Client
     }
 
     /**
-     * @param CreateCheckoutRequest $createCheckoutRequest
-     *
+     * @param  CreateCheckoutRequest  $createCheckoutRequest
      * @return CreateCheckoutResponse
      *
      * @throws RequestDispatcherException
@@ -107,8 +103,7 @@ class Client
     }
 
     /**
-     * @param AuthoriseOrderRequest $authoriseOrderRequest
-     *
+     * @param  AuthoriseOrderRequest  $authoriseOrderRequest
      * @return AuthoriseOrderResponse
      *
      * @throws RequestDispatcherException
@@ -119,8 +114,7 @@ class Client
     }
 
     /**
-     * @param CancelOrderRequest $cancelOrderRequest
-     *
+     * @param  CancelOrderRequest  $cancelOrderRequest
      * @return CancelResponse
      *
      * @throws RequestDispatcherException
@@ -131,8 +125,7 @@ class Client
     }
 
     /**
-     * @param CaptureRequest $captureRequest
-     *
+     * @param  CaptureRequest  $captureRequest
      * @return CaptureResponse
      *
      * @throws RequestDispatcherException
@@ -143,8 +136,7 @@ class Client
     }
 
     /**
-     * @param RefundRequest $refundRequest
-     *
+     * @param  RefundRequest  $refundRequest
      * @return RefundResponse
      *
      * @throws RequestDispatcherException
@@ -155,8 +147,9 @@ class Client
     }
 
     /**
-     * @param RegisterWebhookRequest $request
+     * @param  RegisterWebhookRequest  $request
      * @return RegisterWebhookResponse
+     *
      * @throws RequestDispatcherException
      */
     public function registerWebhook(RegisterWebhookRequest $request): RegisterWebhookResponse
@@ -165,8 +158,7 @@ class Client
     }
 
     /**
-     * @param RetrieveWebhookRequest $request
-     *
+     * @param  RetrieveWebhookRequest  $request
      * @return RetrieveWebhookResponse
      *
      * @throws RequestDispatcherException
@@ -177,8 +169,7 @@ class Client
     }
 
     /**
-     * @param RemoveWebhookRequest $request
-     *
+     * @param  RemoveWebhookRequest  $request
      * @return RemoveWebhookResponse
      *
      * @throws RequestDispatcherException
@@ -189,8 +180,7 @@ class Client
     }
 
     /**
-     * @param UpdateWebhookRequest $request
-     *
+     * @param  UpdateWebhookRequest  $request
      * @return UpdateWebhookResponse
      *
      * @throws RequestDispatcherException
@@ -201,8 +191,7 @@ class Client
     }
 
     /**
-     * @param UpdateReferenceIdRequest $request
-     *
+     * @param  UpdateReferenceIdRequest  $request
      * @return UpdateReferenceIdResponse
      *
      * @throws RequestDispatcherException
@@ -213,8 +202,7 @@ class Client
     }
 
     /**
-     * @param GetOrderByReferenceIdRequest $request
-     *
+     * @param  GetOrderByReferenceIdRequest  $request
      * @return GetOrderByReferenceIdResponse
      *
      * @throws RequestDispatcherException
@@ -227,8 +215,7 @@ class Client
     /**
      * Get order details by tamara order id
      *
-     * @param GetOrderRequest $request
-     *
+     * @param  GetOrderRequest  $request
      * @return GetOrderResponse
      *
      * @throws RequestDispatcherException

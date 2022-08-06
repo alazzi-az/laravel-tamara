@@ -52,8 +52,8 @@ class RegisterWebhookRequest
     public function toArray(): array
     {
         return [
-            Webhook::URL     => $this->getUrl(),
-            Webhook::EVENTS  => $this->getEvents(),
+            Webhook::URL => $this->getUrl(),
+            Webhook::EVENTS => $this->getEvents(),
             Webhook::HEADERS => $this->getHeaders(),
         ];
     }

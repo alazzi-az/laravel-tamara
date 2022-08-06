@@ -12,7 +12,9 @@ use AlazziAz\Tamara\Tamara\Model\ShippingInfo;
 class Capture
 {
     public const
-        CAPTURE_ID = 'capture_id',
+        CAPTURE_ID = 'capture_id';
+
+    public const
         SHIPPING_INFO = 'shipping_info';
 
     /**
@@ -106,13 +108,13 @@ class Capture
     public function toArray(): array
     {
         return [
-            Order::ORDER_ID        => $this->getOrderId(),
-            Order::TOTAL_AMOUNT    => $this->getTotalAmount()->toArray(),
-            Order::ITEMS           => $this->getItems()->toArray(),
+            Order::ORDER_ID => $this->getOrderId(),
+            Order::TOTAL_AMOUNT => $this->getTotalAmount()->toArray(),
+            Order::ITEMS => $this->getItems()->toArray(),
             Order::SHIPPING_AMOUNT => $this->getShippingAmount()->toArray(),
-            Order::TAX_AMOUNT      => $this->getTaxAmount()->toArray(),
+            Order::TAX_AMOUNT => $this->getTaxAmount()->toArray(),
             Order::DISCOUNT_AMOUNT => $this->getDiscountAmount()->toArray(),
-            self::SHIPPING_INFO    => $this->getShippingInfo()->toArray(),
+            self::SHIPPING_INFO => $this->getShippingInfo()->toArray(),
         ];
     }
 }

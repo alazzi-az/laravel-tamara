@@ -73,7 +73,7 @@ class NotificationService
     }
 
     /**
-     * @param Request $request
+     * @param  Request  $request
      *
      * @throws ForbiddenException
      */

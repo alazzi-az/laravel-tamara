@@ -7,8 +7,12 @@ namespace AlazziAz\Tamara\Tamara\Model\Order;
 class Transactions
 {
     private const
-        CANCELS = 'cancels',
-        CAPTURES = 'captures',
+        CANCELS = 'cancels';
+
+    private const
+        CAPTURES = 'captures';
+
+    private const
         REFUNDS = 'refunds';
 
     /**
@@ -32,6 +36,7 @@ class Transactions
         $self->setCancels(CancelCollection::create($data[self::CANCELS]));
         $self->setCaptures(CaptureCollection::create($data[self::CAPTURES]));
         $self->setRefunds(RefundCollection::create($data[self::REFUNDS]));
+
         return $self;
     }
 
@@ -68,9 +73,9 @@ class Transactions
     public function toArray(): array
     {
         return [
-            self::CANCELS  => $this->getCancels()->toArray(),
+            self::CANCELS => $this->getCancels()->toArray(),
             self::CAPTURES => $this->getCaptures()->toArray(),
-            self::REFUNDS  => $this->getRefunds()->toArray(),
+            self::REFUNDS => $this->getRefunds()->toArray(),
         ];
     }
 }

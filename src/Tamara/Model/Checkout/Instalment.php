@@ -47,7 +47,7 @@ class Instalment
     public function toArray(): array
     {
         return [
-            Order::INSTALMENTS     => $this->getInstalments(),
+            Order::INSTALMENTS => $this->getInstalments(),
             PaymentType::MIN_LIMIT => $this->getMinLimit()->toArray(),
             PaymentType::MAX_LIMIT => $this->getMaxLimit()->toArray(),
         ];

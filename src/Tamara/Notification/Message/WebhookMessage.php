@@ -9,6 +9,7 @@ use AlazziAz\Tamara\Tamara\Notification\AbstractMessage;
 class WebhookMessage extends AbstractMessage
 {
     private const EVENT_TYPE = 'event_type';
+
     /**
      * @var string
      */
@@ -19,7 +20,6 @@ class WebhookMessage extends AbstractMessage
         parent::__construct($orderId, $orderReferenceId, $data);
         $this->eventType = $eventType;
     }
-
 
     public static function fromArray(array $data): AbstractMessage
     {

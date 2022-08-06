@@ -9,7 +9,9 @@ use AlazziAz\Tamara\Tamara\Response\ClientResponse;
 class CancelResponse extends ClientResponse
 {
     private const
-        ORDER_ID = 'order_id',
+        ORDER_ID = 'order_id';
+
+    private const
         CANCEL_ID = 'cancel_id';
 
     /**

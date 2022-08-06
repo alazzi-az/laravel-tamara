@@ -31,8 +31,8 @@ class GuzzleHttpAdapter implements ClientInterface
     protected $logger;
 
     /**
-     * @param int $requestTimeout
-     * @param LoggerInterface|null $logger
+     * @param  int  $requestTimeout
+     * @param  LoggerInterface|null  $logger
      */
     public function __construct(int $requestTimeout, LoggerInterface $logger = null)
     {
@@ -58,8 +58,7 @@ class GuzzleHttpAdapter implements ClientInterface
     }
 
     /**
-     * @param RequestInterface $request
-     *
+     * @param  RequestInterface  $request
      * @return ResponseInterface
      *
      * @throws RequestException

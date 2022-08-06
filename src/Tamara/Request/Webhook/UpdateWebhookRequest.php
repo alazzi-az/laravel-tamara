@@ -64,9 +64,9 @@ class UpdateWebhookRequest
     {
         return [
             Webhook::WEBHOOK_ID => $this->getWebhookId(),
-            Webhook::URL        => $this->getUrl(),
-            Webhook::EVENTS     => $this->getEvents(),
-            Webhook::HEADERS    => $this->getHeaders(),
+            Webhook::URL => $this->getUrl(),
+            Webhook::EVENTS => $this->getEvents(),
+            Webhook::HEADERS => $this->getHeaders(),
         ];
     }
 }

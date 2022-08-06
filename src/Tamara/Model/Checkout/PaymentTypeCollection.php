@@ -13,9 +13,15 @@ use IteratorAggregate;
 class PaymentTypeCollection implements IteratorAggregate, Countable
 {
     private const
-        NAME = 'name',
-        DESCRIPTION = 'description',
-        MIN_LIMIT = 'min_limit',
+        NAME = 'name';
+
+    private const
+        DESCRIPTION = 'description';
+
+    private const
+        MIN_LIMIT = 'min_limit';
+
+    private const
         MAX_LIMIT = 'max_limit';
 
     /**
@@ -45,7 +51,7 @@ class PaymentTypeCollection implements IteratorAggregate, Countable
     }
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     public function count(): int
     {
@@ -55,7 +61,7 @@ class PaymentTypeCollection implements IteratorAggregate, Countable
     private function parseSupportedInstalments(array $data): array
     {
         $result = [];
-        if (isset($data[PaymentType::SUPPORTED_INSTALMENTS]) && !empty($data[PaymentType::SUPPORTED_INSTALMENTS])) {
+        if (isset($data[PaymentType::SUPPORTED_INSTALMENTS]) && ! empty($data[PaymentType::SUPPORTED_INSTALMENTS])) {
             foreach ($data[PaymentType::SUPPORTED_INSTALMENTS] as $item) {
                 $minLimit = $item[self::MIN_LIMIT];
                 $maxLimit = $item[self::MAX_LIMIT];

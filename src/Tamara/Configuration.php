@@ -35,12 +35,11 @@ class Configuration
     protected $logger;
 
     /**
-     * @param string               $apiUrl
-     * @param string               $apiToken
-     * @param int|null             $apiRequestTimeout
-     * @param LoggerInterface|null $logger
-     * @param ClientInterface|null $transport
-     *
+     * @param  string  $apiUrl
+     * @param  string  $apiToken
+     * @param  int|null  $apiRequestTimeout
+     * @param  LoggerInterface|null  $logger
+     * @param  ClientInterface|null  $transport
      * @return Configuration
      */
     public static function create(
@@ -54,11 +53,11 @@ class Configuration
     }
 
     /**
-     * @param string               $apiUrl
-     * @param string               $apiToken
-     * @param int|null             $apiRequestTimeout
-     * @param LoggerInterface|null $logger
-     * @param ClientInterface|null $transport
+     * @param  string  $apiUrl
+     * @param  string  $apiToken
+     * @param  int|null  $apiRequestTimeout
+     * @param  LoggerInterface|null  $logger
+     * @param  ClientInterface|null  $transport
      */
     public function __construct(
         string $apiUrl,

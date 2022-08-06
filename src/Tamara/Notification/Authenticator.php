@@ -12,8 +12,11 @@ use Throwable;
 class Authenticator
 {
     private const
-        AUTHORIZATION = 'Authorization',
+        AUTHORIZATION = 'Authorization';
+
+    private const
         TOKEN = 'tamaraToken';
+
     /**
      * @var string
      */
@@ -25,13 +28,13 @@ class Authenticator
     }
 
     /**
-     * @param Request $request
+     * @param  Request  $request
      *
      * @throws ForbiddenException
      */
     public function authenticate(Request $request): void
     {
-        if (!$request->headers->has(self::AUTHORIZATION) && !$request->get(self::TOKEN)) {
+        if (! $request->headers->has(self::AUTHORIZATION) && ! $request->get(self::TOKEN)) {
             throw new ForbiddenException('Access denied.');
         }
 
@@ -48,7 +51,7 @@ class Authenticator
 
     protected function getBearerToken(string $authorizationHeader): string
     {
-        if (!empty($authorizationHeader) && preg_match('/Bearer\s(\S+)/', $authorizationHeader, $matches)) {
+        if (! empty($authorizationHeader) && preg_match('/Bearer\s(\S+)/', $authorizationHeader, $matches)) {
             return $matches[1];
         }
 
@@ -56,8 +59,7 @@ class Authenticator
     }
 
     /**
-     * @param string $token
-     *
+     * @param  string  $token
      * @return object
      */
     protected function decode(string $token)

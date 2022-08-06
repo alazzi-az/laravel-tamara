@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-
 namespace AlazziAz\Tamara\Tamara\Model\Order;
 
 use ArrayIterator;
@@ -56,7 +55,7 @@ class OrderItemCollection implements IteratorAggregate, Countable
     }
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     public function count(): int
     {

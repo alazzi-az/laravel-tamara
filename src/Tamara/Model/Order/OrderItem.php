@@ -9,15 +9,33 @@ use AlazziAz\Tamara\Tamara\Model\Money;
 class OrderItem
 {
     public const
-        REFERENCE_ID = 'reference_id',
-        TYPE = 'type',
-        NAME = 'name',
-        SKU = 'sku',
-        QUANTITY = 'quantity',
-        TAX_AMOUNT = 'tax_amount',
-        TOTAL_AMOUNT = 'total_amount',
-        UNIT_PRICE = 'unit_price',
-        DISCOUNT_AMOUNT = 'discount_amount',
+        REFERENCE_ID = 'reference_id';
+
+    public const
+        TYPE = 'type';
+
+    public const
+        NAME = 'name';
+
+    public const
+        SKU = 'sku';
+
+    public const
+        QUANTITY = 'quantity';
+
+    public const
+        TAX_AMOUNT = 'tax_amount';
+
+    public const
+        TOTAL_AMOUNT = 'total_amount';
+
+    public const
+        UNIT_PRICE = 'unit_price';
+
+    public const
+        DISCOUNT_AMOUNT = 'discount_amount';
+
+    public const
         IMAGE_URL = 'image_url';
 
     /**
@@ -216,16 +234,16 @@ class OrderItem
     public function toArray(): array
     {
         return [
-            self::REFERENCE_ID    => $this->getReferenceId(),
-            self::TYPE            => $this->getType(),
-            self::NAME            => $this->getName(),
-            self::SKU             => $this->getSku(),
-            self::QUANTITY        => $this->getQuantity(),
-            self::TAX_AMOUNT      => $this->getTaxAmount()->toArray(),
-            self::TOTAL_AMOUNT    => $this->getTotalAmount()->toArray(),
-            self::UNIT_PRICE      => $this->getUnitPrice() ? $this->getUnitPrice()->toArray() : null,
+            self::REFERENCE_ID => $this->getReferenceId(),
+            self::TYPE => $this->getType(),
+            self::NAME => $this->getName(),
+            self::SKU => $this->getSku(),
+            self::QUANTITY => $this->getQuantity(),
+            self::TAX_AMOUNT => $this->getTaxAmount()->toArray(),
+            self::TOTAL_AMOUNT => $this->getTotalAmount()->toArray(),
+            self::UNIT_PRICE => $this->getUnitPrice() ? $this->getUnitPrice()->toArray() : null,
             self::DISCOUNT_AMOUNT => $this->getDiscountAmount() ? $this->getDiscountAmount()->toArray() : null,
-            self::IMAGE_URL       => $this->getImageUrl(),
+            self::IMAGE_URL => $this->getImageUrl(),
         ];
     }
 }

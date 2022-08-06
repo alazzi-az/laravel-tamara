@@ -9,15 +9,26 @@ use AlazziAz\Tamara\Tamara\Model\Money;
 class PaymentType
 {
     public const
-        NAME = 'name',
-        DESCRIPTION = 'description',
-        MIN_LIMIT = 'min_limit',
-        MAX_LIMIT = 'max_limit',
+        NAME = 'name';
+
+    public const
+        DESCRIPTION = 'description';
+
+    public const
+        MIN_LIMIT = 'min_limit';
+
+    public const
+        MAX_LIMIT = 'max_limit';
+
+    public const
         SUPPORTED_INSTALMENTS = 'supported_instalments';
 
     private $name;
+
     private $description;
+
     private $minLimit;
+
     private $maxLimit;
 
     /**
@@ -70,13 +81,13 @@ class PaymentType
     public function toArray(): array
     {
         $result = [
-            self::NAME        => $this->getName(),
+            self::NAME => $this->getName(),
             self::DESCRIPTION => $this->getDescription(),
-            self::MIN_LIMIT   => $this->getMinLimit()->toArray(),
-            self::MAX_LIMIT   => $this->getMaxLimit()->toArray(),
+            self::MIN_LIMIT => $this->getMinLimit()->toArray(),
+            self::MAX_LIMIT => $this->getMaxLimit()->toArray(),
         ];
 
-        if (!empty($this->getSupportedInstalments())) {
+        if (! empty($this->getSupportedInstalments())) {
             foreach ($this->getSupportedInstalments() as $instalment) {
                 $result[self::SUPPORTED_INSTALMENTS][] = $instalment->toArray();
             }

@@ -151,13 +151,13 @@ class GetPaymentTypesV2Request
     public function toArray(): array
     {
         return [
-            Order::TOTAL_AMOUNT     => $this->getTotalAmount()->toArray(),
-            Order::COUNTRY_CODE     => $this->getCountryCode(),
-            Order::ITEMS            => $this->getItems() ? $this->getItems()->toArray() : null,
-            Order::CONSUMER         => $this->getConsumer() ? $this->getConsumer()->toArray() : null,
+            Order::TOTAL_AMOUNT => $this->getTotalAmount()->toArray(),
+            Order::COUNTRY_CODE => $this->getCountryCode(),
+            Order::ITEMS => $this->getItems() ? $this->getItems()->toArray() : null,
+            Order::CONSUMER => $this->getConsumer() ? $this->getConsumer()->toArray() : null,
             Order::SHIPPING_ADDRESS => $this->getShippingAddress() ? $this->getShippingAddress()->toArray() : null,
-            Order::RISK_ASSESSMENT  => $this->getRiskAssessment() ? $this->getRiskAssessment()->getData() : null,
-            Order::ADDITIONAL_DATA  => $this->getAdditionalData(),
+            Order::RISK_ASSESSMENT => $this->getRiskAssessment() ? $this->getRiskAssessment()->getData() : null,
+            Order::ADDITIONAL_DATA => $this->getAdditionalData(),
         ];
     }
 }

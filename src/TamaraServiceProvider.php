@@ -13,9 +13,7 @@ class TamaraServiceProvider extends PackageServiceProvider
 {
     public function registeringPackage()
     {
-
         $this->app->singleton('tamara', function () {
-
             $configuration = Configuration::create(
                 config('tamara.uri'),
                 config('tamara.token'),
@@ -30,7 +28,6 @@ class TamaraServiceProvider extends PackageServiceProvider
         });
 
         $this->app->singleton('tamara-merchant-url', function () {
-
             $merchantUrl = new MerchantUrl();
 
             $merchantUrl->setSuccessUrl(config('tamara.success_url'));

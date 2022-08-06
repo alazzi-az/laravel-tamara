@@ -7,14 +7,30 @@ namespace AlazziAz\Tamara\Tamara\Model\Order;
 class Address
 {
     public const
-        FIRST_NAME = 'first_name',
-        LAST_NAME = 'last_name',
-        LINE1 = 'line1',
-        LINE2 = 'line2',
-        REGION = 'region',
-        POSTAL_CODE = 'postal_code',
-        CITY = 'city',
-        COUNTRY_CODE = 'country_code',
+        FIRST_NAME = 'first_name';
+
+    public const
+        LAST_NAME = 'last_name';
+
+    public const
+        LINE1 = 'line1';
+
+    public const
+        LINE2 = 'line2';
+
+    public const
+        REGION = 'region';
+
+    public const
+        POSTAL_CODE = 'postal_code';
+
+    public const
+        CITY = 'city';
+
+    public const
+        COUNTRY_CODE = 'country_code';
+
+    public const
         PHONE_NUMBER = 'phone_number';
 
     /**
@@ -189,13 +205,13 @@ class Address
     public function toArray(): array
     {
         return [
-            self::FIRST_NAME   => $this->getFirstName(),
-            self::LAST_NAME    => $this->getLastName(),
-            self::LINE1        => $this->getLine1(),
-            self::LINE2        => $this->getLine2(),
-            self::REGION       => $this->getRegion(),
-            self::POSTAL_CODE  => $this->getPostalCode(),
-            self::CITY         => $this->getCity(),
+            self::FIRST_NAME => $this->getFirstName(),
+            self::LAST_NAME => $this->getLastName(),
+            self::LINE1 => $this->getLine1(),
+            self::LINE2 => $this->getLine2(),
+            self::REGION => $this->getRegion(),
+            self::POSTAL_CODE => $this->getPostalCode(),
+            self::CITY => $this->getCity(),
             self::COUNTRY_CODE => $this->getCountryCode(),
             self::PHONE_NUMBER => $this->getPhoneNumber(),
         ];

@@ -9,8 +9,12 @@ use AlazziAz\Tamara\Tamara\Notification\Exception\NotificationException;
 abstract class AbstractMessage
 {
     public const
-        ORDER_ID = 'order_id',
-        ORDER_REFERENCE_ID = 'order_reference_id',
+        ORDER_ID = 'order_id';
+
+    public const
+        ORDER_REFERENCE_ID = 'order_reference_id';
+
+    public const
         DATA = 'data';
 
     /**
@@ -52,7 +56,7 @@ abstract class AbstractMessage
 
     public function getDataByKey(string $key)
     {
-        if (!isset($this->data[$key])) {
+        if (! isset($this->data[$key])) {
             throw new NotificationException(sprintf('Invalid key %s', $key));
         }
 

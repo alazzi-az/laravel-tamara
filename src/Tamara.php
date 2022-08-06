@@ -10,9 +10,7 @@ class Tamara
     public function __construct(
         protected Client $client,
         protected NotificationService $notificationService
-    )
-    {
-
+    ) {
     }
 
     public function client(): Client

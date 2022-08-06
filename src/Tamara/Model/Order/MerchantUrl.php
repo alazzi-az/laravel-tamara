@@ -7,9 +7,15 @@ namespace AlazziAz\Tamara\Tamara\Model\Order;
 class MerchantUrl
 {
     public const
-        SUCCESS = 'success',
-        FAILURE = 'failure',
-        CANCEL = 'cancel',
+        SUCCESS = 'success';
+
+    public const
+        FAILURE = 'failure';
+
+    public const
+        CANCEL = 'cancel';
+
+    public const
         NOTIFICATION = 'notification';
 
     /**
@@ -83,9 +89,9 @@ class MerchantUrl
     public function toArray(): array
     {
         return [
-            self::SUCCESS      => $this->getSuccessUrl(),
-            self::FAILURE      => $this->getFailureUrl(),
-            self::CANCEL       => $this->getCancelUrl(),
+            self::SUCCESS => $this->getSuccessUrl(),
+            self::FAILURE => $this->getFailureUrl(),
+            self::CANCEL => $this->getCancelUrl(),
             self::NOTIFICATION => $this->getNotificationUrl(),
         ];
     }

@@ -11,10 +11,18 @@ use DateTimeImmutable;
 class CancelItem
 {
     private const
-        CANCEL_ID = 'cancel_id',
-        ORDER_ID = 'order_id',
-        TOTAL_AMOUNT = 'total_amount',
-        ITEMS = 'items',
+        CANCEL_ID = 'cancel_id';
+
+    private const
+        ORDER_ID = 'order_id';
+
+    private const
+        TOTAL_AMOUNT = 'total_amount';
+
+    private const
+        ITEMS = 'items';
+
+    private const
         CREATED_AT = 'created_at';
 
     /**
@@ -107,11 +115,11 @@ class CancelItem
     public function toArray(): array
     {
         return [
-            self::CANCEL_ID    => $this->getCancelId(),
-            self::ORDER_ID     => $this->getOrderId(),
-            self::ITEMS        => $this->getItems()->toArray(),
+            self::CANCEL_ID => $this->getCancelId(),
+            self::ORDER_ID => $this->getOrderId(),
+            self::ITEMS => $this->getItems()->toArray(),
             self::TOTAL_AMOUNT => $this->getTotalAmount()->toArray(),
-            self::CREATED_AT   => $this->getCreatedAt()->format(DateTime::ATOM),
+            self::CREATED_AT => $this->getCreatedAt()->format(DateTime::ATOM),
         ];
     }
 }
