@@ -127,7 +127,10 @@ class HttpClient
             if ($exception instanceof RequestException) {
                 return $exception->getResponse();
             }
+
+            throw $exception;
         }
+
     }
 
     /**

@@ -49,7 +49,7 @@ class Configuration
         LoggerInterface $logger = null,
         ClientInterface $transport = null
     ): Configuration {
-        return new static($apiUrl, $apiToken, $apiRequestTimeout, $logger, $transport);
+        return new self($apiUrl, $apiToken, $apiRequestTimeout, $logger, $transport);
     }
 
     /**
@@ -63,8 +63,8 @@ class Configuration
         string $apiUrl,
         string $apiToken,
         int $apiRequestTimeout = null,
-        LoggerInterface $logger = null,
-        ClientInterface $transport = null
+        ?LoggerInterface $logger = null,
+        ?ClientInterface $transport = null
     ) {
         $this->apiUrl = $apiUrl;
         $this->apiToken = $apiToken;
@@ -84,6 +84,7 @@ class Configuration
     {
         $transport = $this->transport ?? $this->createDefaultTransport();
 
+        /** @var \AlazziAz\Tamara\Tamara\HttpClient\ClientInterface $transport */
         return new HttpClient(
             $this->getApiUrl(),
             $this->getApiToken(),

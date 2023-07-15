@@ -56,7 +56,7 @@ class Client
      */
     public static function create(Configuration $configuration): Client
     {
-        return new static($configuration->createHttpClient());
+        return new self($configuration->createHttpClient());
     }
 
     /**
