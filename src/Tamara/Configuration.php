@@ -34,14 +34,6 @@ class Configuration
      */
     protected $logger;
 
-    /**
-     * @param  string  $apiUrl
-     * @param  string  $apiToken
-     * @param  int|null  $apiRequestTimeout
-     * @param  LoggerInterface|null  $logger
-     * @param  ClientInterface|null  $transport
-     * @return Configuration
-     */
     public static function create(
         string $apiUrl,
         string $apiToken,
@@ -52,19 +44,12 @@ class Configuration
         return new self($apiUrl, $apiToken, $apiRequestTimeout, $logger, $transport);
     }
 
-    /**
-     * @param  string  $apiUrl
-     * @param  string  $apiToken
-     * @param  int|null  $apiRequestTimeout
-     * @param  LoggerInterface|null  $logger
-     * @param  ClientInterface|null  $transport
-     */
     public function __construct(
         string $apiUrl,
         string $apiToken,
         int $apiRequestTimeout = null,
-        ?LoggerInterface $logger = null,
-        ?ClientInterface $transport = null
+        LoggerInterface $logger = null,
+        ClientInterface $transport = null
     ) {
         $this->apiUrl = $apiUrl;
         $this->apiToken = $apiToken;
@@ -77,9 +62,6 @@ class Configuration
         $this->transport = $transport;
     }
 
-    /**
-     * @return HttpClient
-     */
     public function createHttpClient(): HttpClient
     {
         $transport = $this->transport ?? $this->createDefaultTransport();
@@ -92,41 +74,26 @@ class Configuration
         );
     }
 
-    /**
-     * @return string
-     */
     public function getApiUrl(): string
     {
         return $this->apiUrl;
     }
 
-    /**
-     * @return string
-     */
     public function getApiToken(): string
     {
         return $this->apiToken;
     }
 
-    /**
-     * @return int
-     */
     public function getApiRequestTimeout(): int
     {
         return $this->apiRequestTimeout;
     }
 
-    /**
-     * @return LoggerInterface|null
-     */
     public function getLogger(): ?LoggerInterface
     {
         return $this->logger ?? null;
     }
 
-    /**
-     * @return ClientInterface
-     */
     protected function createDefaultTransport(): ClientInterface
     {
         return AdapterFactory::create($this->getApiRequestTimeout(), $this->getLogger());

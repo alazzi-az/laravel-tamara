@@ -6,14 +6,11 @@ namespace AlazziAz\Tamara\Tamara\Model\Checkout;
 
 class CheckoutResponse
 {
-    public const
-        ORDER_ID = 'order_id';
+    public const ORDER_ID = 'order_id';
 
-    public const
-        CHECKOUT_ID = 'checkout_id';
+    public const CHECKOUT_ID = 'checkout_id';
 
-    public const
-        CHECKOUT_URL = 'checkout_url';
+    public const CHECKOUT_URL = 'checkout_url';
 
     private $orderId;
 

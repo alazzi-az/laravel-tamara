@@ -11,11 +11,9 @@ use Throwable;
 
 class Authenticator
 {
-    private const
-        AUTHORIZATION = 'Authorization';
+    private const AUTHORIZATION = 'Authorization';
 
-    private const
-        TOKEN = 'tamaraToken';
+    private const TOKEN = 'tamaraToken';
 
     /**
      * @var string
@@ -28,8 +26,6 @@ class Authenticator
     }
 
     /**
-     * @param  Request  $request
-     *
      * @throws ForbiddenException
      */
     public function authenticate(Request $request): void
@@ -59,7 +55,6 @@ class Authenticator
     }
 
     /**
-     * @param  string  $token
      * @return object
      */
     protected function decode(string $token)

@@ -9,14 +9,11 @@ use DateTimeImmutable;
 
 class AuthoriseOrderResponse extends ClientResponse
 {
-    private const
-        ORDER_ID = 'order_id';
+    private const ORDER_ID = 'order_id';
 
-    private const
-        STATUS = 'status';
+    private const STATUS = 'status';
 
-    private const
-        ORDER_EXPIRY_TIME = 'order_expiry_time';
+    private const ORDER_EXPIRY_TIME = 'order_expiry_time';
 
     /**
      * @var string|null

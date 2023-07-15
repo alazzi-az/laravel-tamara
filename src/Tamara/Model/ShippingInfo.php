@@ -8,17 +8,13 @@ use DateTimeImmutable;
 
 class ShippingInfo
 {
-    public const
-        SHIPPED_AT = 'shipped_at';
+    public const SHIPPED_AT = 'shipped_at';
 
-    public const
-        SHIPPING_COMPANY = 'shipping_company';
+    public const SHIPPING_COMPANY = 'shipping_company';
 
-    public const
-        TRACKING_NUMBER = 'tracking_number';
+    public const TRACKING_NUMBER = 'tracking_number';
 
-    public const
-        TRACKING_URL = 'tracking_url';
+    public const TRACKING_URL = 'tracking_url';
 
     /**
      * @var DateTimeImmutable
@@ -43,8 +39,8 @@ class ShippingInfo
     public function __construct(
         DateTimeImmutable $shippedAt,
         string $shippingCompany,
-        ?string $trackingNumber = null,
-        ?string $trackingUrl = null
+        string $trackingNumber = null,
+        string $trackingUrl = null
     ) {
         $this->shippedAt = $shippedAt;
         $this->shippingCompany = $shippingCompany;

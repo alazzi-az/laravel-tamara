@@ -6,14 +6,11 @@ namespace AlazziAz\Tamara\Tamara\Model\Order;
 
 class Transactions
 {
-    private const
-        CANCELS = 'cancels';
+    private const CANCELS = 'cancels';
 
-    private const
-        CAPTURES = 'captures';
+    private const CAPTURES = 'captures';
 
-    private const
-        REFUNDS = 'refunds';
+    private const REFUNDS = 'refunds';
 
     /**
      * @var CancelCollection

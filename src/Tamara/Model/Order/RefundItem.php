@@ -10,20 +10,15 @@ use DateTimeImmutable;
 
 class RefundItem
 {
-    private const
-        REFUND_ID = 'refund_id';
+    private const REFUND_ID = 'refund_id';
 
-    private const
-        CAPTURE_ID = 'capture_id';
+    private const CAPTURE_ID = 'capture_id';
 
-    private const
-        TOTAL_AMOUNT = 'total_amount';
+    private const TOTAL_AMOUNT = 'total_amount';
 
-    private const
-        ITEMS = 'items';
+    private const ITEMS = 'items';
 
-    private const
-        CREATED_AT = 'created_at';
+    private const CREATED_AT = 'created_at';
 
     /**
      * @var string

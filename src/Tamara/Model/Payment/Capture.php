@@ -11,11 +11,9 @@ use AlazziAz\Tamara\Tamara\Model\ShippingInfo;
 
 class Capture
 {
-    public const
-        CAPTURE_ID = 'capture_id';
+    public const CAPTURE_ID = 'capture_id';
 
-    public const
-        SHIPPING_INFO = 'shipping_info';
+    public const SHIPPING_INFO = 'shipping_info';
 
     /**
      * @var string Tamara order id

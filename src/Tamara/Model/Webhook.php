@@ -6,15 +6,11 @@ namespace AlazziAz\Tamara\Tamara\Model;
 
 class Webhook
 {
-    public const
-        WEBHOOK_ID = 'webhook_id';
+    public const WEBHOOK_ID = 'webhook_id';
 
-    public const
-        URL = 'url';
+    public const URL = 'url';
 
-    public const
-        EVENTS = 'events';
+    public const EVENTS = 'events';
 
-    public const
-        HEADERS = 'headers';
+    public const HEADERS = 'headers';
 }

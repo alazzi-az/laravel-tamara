@@ -16,65 +16,45 @@ use DateTimeImmutable;
 
 class GetOrderByReferenceIdResponse extends ClientResponse
 {
-    private const
-        ORDER_ID = 'order_id';
+    private const ORDER_ID = 'order_id';
 
-    private const
-        ORDER_REFERENCE_ID = 'order_reference_id';
+    private const ORDER_REFERENCE_ID = 'order_reference_id';
 
-    private const
-        ORDER_NUMBER = 'order_number';
+    private const ORDER_NUMBER = 'order_number';
 
-    private const
-        CONSUMER = 'consumer';
+    private const CONSUMER = 'consumer';
 
-    private const
-        STATUS = 'status';
+    private const STATUS = 'status';
 
-    private const
-        BILLING_ADDRESS = 'billing_address';
+    private const BILLING_ADDRESS = 'billing_address';
 
-    private const
-        SHIPPING_ADDRESS = 'shipping_address';
+    private const SHIPPING_ADDRESS = 'shipping_address';
 
-    private const
-        PAYMENT_TYPE = 'payment_type';
+    private const PAYMENT_TYPE = 'payment_type';
 
-    private const
-        TOTAL_AMOUNT = 'total_amount';
+    private const TOTAL_AMOUNT = 'total_amount';
 
-    private const
-        REFUNDED_AMOUNT = 'refunded_amount';
+    private const REFUNDED_AMOUNT = 'refunded_amount';
 
-    private const
-        CAPTURED_AMOUNT = 'captured_amount';
+    private const CAPTURED_AMOUNT = 'captured_amount';
 
-    private const
-        TAX_AMOUNT = 'tax_amount';
+    private const TAX_AMOUNT = 'tax_amount';
 
-    private const
-        SHIPPING_AMOUNT = 'shipping_amount';
+    private const SHIPPING_AMOUNT = 'shipping_amount';
 
-    private const
-        DISCOUNT_AMOUNT = 'discount_amount';
+    private const DISCOUNT_AMOUNT = 'discount_amount';
 
-    private const
-        CANCELED_AMOUNT = 'canceled_amount';
+    private const CANCELED_AMOUNT = 'canceled_amount';
 
-    private const
-        ITEMS = 'items';
+    private const ITEMS = 'items';
 
-    private const
-        SETTLEMENT_STATUS = 'settlement_status';
+    private const SETTLEMENT_STATUS = 'settlement_status';
 
-    private const
-        SETTLEMENT_DATE = 'settlement_date';
+    private const SETTLEMENT_DATE = 'settlement_date';
 
-    private const
-        CREATED_AT = 'created_at';
+    private const CREATED_AT = 'created_at';
 
-    private const
-        TRANSACTIONS = 'transactions';
+    private const TRANSACTIONS = 'transactions';
 
     /**
      * @var string

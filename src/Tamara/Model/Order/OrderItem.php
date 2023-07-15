@@ -8,35 +8,25 @@ use AlazziAz\Tamara\Tamara\Model\Money;
 
 class OrderItem
 {
-    public const
-        REFERENCE_ID = 'reference_id';
+    public const REFERENCE_ID = 'reference_id';
 
-    public const
-        TYPE = 'type';
+    public const TYPE = 'type';
 
-    public const
-        NAME = 'name';
+    public const NAME = 'name';
 
-    public const
-        SKU = 'sku';
+    public const SKU = 'sku';
 
-    public const
-        QUANTITY = 'quantity';
+    public const QUANTITY = 'quantity';
 
-    public const
-        TAX_AMOUNT = 'tax_amount';
+    public const TAX_AMOUNT = 'tax_amount';
 
-    public const
-        TOTAL_AMOUNT = 'total_amount';
+    public const TOTAL_AMOUNT = 'total_amount';
 
-    public const
-        UNIT_PRICE = 'unit_price';
+    public const UNIT_PRICE = 'unit_price';
 
-    public const
-        DISCOUNT_AMOUNT = 'discount_amount';
+    public const DISCOUNT_AMOUNT = 'discount_amount';
 
-    public const
-        IMAGE_URL = 'image_url';
+    public const IMAGE_URL = 'image_url';
 
     /**
      * @var string
@@ -140,17 +130,11 @@ class OrderItem
         return $this->totalAmount;
     }
 
-    /**
-     * @return Money|null
-     */
     public function getUnitPrice(): ?Money
     {
         return $this->unitPrice;
     }
 
-    /**
-     * @return Money|null
-     */
     public function getDiscountAmount(): ?Money
     {
         return $this->discountAmount;

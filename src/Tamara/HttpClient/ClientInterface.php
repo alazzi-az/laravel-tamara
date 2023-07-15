@@ -14,7 +14,6 @@ interface ClientInterface extends \Psr\Http\Client\ClientInterface
      * @param  array  $headers Request headers
      * @param  string|null|resource|StreamInterface  $body Request body
      * @param  string  $version Protocol version
-     * @return RequestInterface
      */
     public function createRequest(
         string $method,

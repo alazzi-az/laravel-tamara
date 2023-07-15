@@ -11,35 +11,25 @@ use DateTimeImmutable;
 
 class CaptureItem
 {
-    private const
-        CAPTURE_ID = 'capture_id';
+    private const CAPTURE_ID = 'capture_id';
 
-    private const
-        ORDER_ID = 'order_id';
+    private const ORDER_ID = 'order_id';
 
-    private const
-        TOTAL_AMOUNT = 'total_amount';
+    private const TOTAL_AMOUNT = 'total_amount';
 
-    private const
-        REFUNDED_AMOUNT = 'refunded_amount';
+    private const REFUNDED_AMOUNT = 'refunded_amount';
 
-    private const
-        TAX_AMOUNT = 'tax_amount';
+    private const TAX_AMOUNT = 'tax_amount';
 
-    private const
-        SHIPPING_AMOUNT = 'shipping_amount';
+    private const SHIPPING_AMOUNT = 'shipping_amount';
 
-    private const
-        DISCOUNT_AMOUNT = 'discount_amount';
+    private const DISCOUNT_AMOUNT = 'discount_amount';
 
-    private const
-        SHIPPING_INFO = 'shipping_info';
+    private const SHIPPING_INFO = 'shipping_info';
 
-    private const
-        ITEMS = 'items';
+    private const ITEMS = 'items';
 
-    private const
-        CREATED_AT = 'created_at';
+    private const CREATED_AT = 'created_at';
 
     /**
      * @var string

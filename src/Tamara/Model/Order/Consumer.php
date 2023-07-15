@@ -6,26 +6,19 @@ namespace AlazziAz\Tamara\Tamara\Model\Order;
 
 class Consumer
 {
-    public const
-        FIRST_NAME = 'first_name';
+    public const FIRST_NAME = 'first_name';
 
-    public const
-        LAST_NAME = 'last_name';
+    public const LAST_NAME = 'last_name';
 
-    public const
-        EMAIL = 'email';
+    public const EMAIL = 'email';
 
-    public const
-        PHONE_NUMBER = 'phone_number';
+    public const PHONE_NUMBER = 'phone_number';
 
-    public const
-        NATIONAL_ID = 'national_id';
+    public const NATIONAL_ID = 'national_id';
 
-    public const
-        DATE_OF_BIRTH = 'date_of_birth';
+    public const DATE_OF_BIRTH = 'date_of_birth';
 
-    public const
-        IS_FIRST_ORDER = 'is_first_order';
+    public const IS_FIRST_ORDER = 'is_first_order';
 
     /**
      * @var string

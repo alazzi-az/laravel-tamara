@@ -8,77 +8,53 @@ use AlazziAz\Tamara\Tamara\Model\Money;
 
 class Order
 {
-    public const
-        ORDER_ID = 'order_id';
+    public const ORDER_ID = 'order_id';
 
-    public const
-        TOTAL_AMOUNT = 'total_amount';
+    public const TOTAL_AMOUNT = 'total_amount';
 
-    public const
-        ITEMS = 'items';
+    public const ITEMS = 'items';
 
-    public const
-        CONSUMER = 'consumer';
+    public const CONSUMER = 'consumer';
 
-    public const
-        BILLING_ADDRESS = 'billing_address';
+    public const BILLING_ADDRESS = 'billing_address';
 
-    public const
-        SHIPPING_ADDRESS = 'shipping_address';
+    public const SHIPPING_ADDRESS = 'shipping_address';
 
-    public const
-        DISCOUNT = 'discount';
+    public const DISCOUNT = 'discount';
 
-    public const
-        TAX_AMOUNT = 'tax_amount';
+    public const TAX_AMOUNT = 'tax_amount';
 
-    public const
-        SHIPPING_AMOUNT = 'shipping_amount';
+    public const SHIPPING_AMOUNT = 'shipping_amount';
 
-    public const
-        MERCHANT_URL = 'merchant_url';
+    public const MERCHANT_URL = 'merchant_url';
 
-    public const
-        PAYMENT_TYPE = 'payment_type';
+    public const PAYMENT_TYPE = 'payment_type';
 
-    public const
-        ORDER_REFERENCE_ID = 'order_reference_id';
+    public const ORDER_REFERENCE_ID = 'order_reference_id';
 
-    public const
-        ORDER_NUMBER = 'order_number';
+    public const ORDER_NUMBER = 'order_number';
 
-    public const
-        DESCRIPTION = 'description';
+    public const DESCRIPTION = 'description';
 
-    public const
-        COUNTRY_CODE = 'country_code';
+    public const COUNTRY_CODE = 'country_code';
 
-    public const
-        LOCALE = 'locale';
+    public const LOCALE = 'locale';
 
-    public const
-        PLATFORM = 'platform';
+    public const PLATFORM = 'platform';
 
-    public const
-        DISCOUNT_AMOUNT = 'discount_amount';
+    public const DISCOUNT_AMOUNT = 'discount_amount';
 
-    public const
-        RISK_ASSESSMENT = 'risk_assessment';
+    public const RISK_ASSESSMENT = 'risk_assessment';
 
-    public const
-        INSTALMENTS = 'instalments';
+    public const INSTALMENTS = 'instalments';
 
-    public const
-        EXPIRY_TIME = 'expires_in_minutes';
+    public const EXPIRY_TIME = 'expires_in_minutes';
 
-    public const
-        PAY_BY_INSTALMENTS = 'PAY_BY_INSTALMENTS';
+    public const PAY_BY_INSTALMENTS = 'PAY_BY_INSTALMENTS';
 
-    public const
-        PAY_BY_LATER = 'PAY_BY_LATER';
+    public const PAY_BY_LATER = 'PAY_BY_LATER';
 
-    public const
-        ADDITIONAL_DATA = 'additional_data';
+    public const ADDITIONAL_DATA = 'additional_data';
 
     /**
      * @var string

@@ -6,17 +6,13 @@ namespace AlazziAz\Tamara\Tamara\Model\Order;
 
 class MerchantUrl
 {
-    public const
-        SUCCESS = 'success';
+    public const SUCCESS = 'success';
 
-    public const
-        FAILURE = 'failure';
+    public const FAILURE = 'failure';
 
-    public const
-        CANCEL = 'cancel';
+    public const CANCEL = 'cancel';
 
-    public const
-        NOTIFICATION = 'notification';
+    public const NOTIFICATION = 'notification';
 
     /**
      * @var string

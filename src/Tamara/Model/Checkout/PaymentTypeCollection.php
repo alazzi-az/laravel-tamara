@@ -12,17 +12,13 @@ use IteratorAggregate;
 
 class PaymentTypeCollection implements IteratorAggregate, Countable
 {
-    private const
-        NAME = 'name';
+    private const NAME = 'name';
 
-    private const
-        DESCRIPTION = 'description';
+    private const DESCRIPTION = 'description';
 
-    private const
-        MIN_LIMIT = 'min_limit';
+    private const MIN_LIMIT = 'min_limit';
 
-    private const
-        MAX_LIMIT = 'max_limit';
+    private const MAX_LIMIT = 'max_limit';
 
     /**
      * @var array|PaymentType[]

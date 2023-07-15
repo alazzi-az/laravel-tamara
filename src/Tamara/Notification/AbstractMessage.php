@@ -8,14 +8,11 @@ use AlazziAz\Tamara\Tamara\Notification\Exception\NotificationException;
 
 abstract class AbstractMessage
 {
-    public const
-        ORDER_ID = 'order_id';
+    public const ORDER_ID = 'order_id';
 
-    public const
-        ORDER_REFERENCE_ID = 'order_reference_id';
+    public const ORDER_REFERENCE_ID = 'order_reference_id';
 
-    public const
-        DATA = 'data';
+    public const DATA = 'data';
 
     /**
      * @var string the Tamara unique order id

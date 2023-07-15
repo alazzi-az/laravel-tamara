@@ -10,11 +10,9 @@ use AlazziAz\Tamara\Tamara\Model\Order\OrderItemCollection;
 
 class Refund
 {
-    public const
-        REFUND_ID = 'refund_id';
+    public const REFUND_ID = 'refund_id';
 
-    public const
-        REFUND_COLLECTION = 'refunds';
+    public const REFUND_COLLECTION = 'refunds';
 
     /**
      * @var string Tamara capture id

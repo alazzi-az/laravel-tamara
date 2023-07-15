@@ -16,9 +16,6 @@ class RetrieveWebhookRequest
         $this->webhookId = $webhookId;
     }
 
-    /**
-     * @return string
-     */
     public function getWebhookId(): string
     {
         return $this->webhookId;

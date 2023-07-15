@@ -8,11 +8,9 @@ use AlazziAz\Tamara\Tamara\Model\Money;
 
 class Discount
 {
-    public const
-        NAME = 'name';
+    public const NAME = 'name';
 
-    public const
-        AMOUNT = 'amount';
+    public const AMOUNT = 'amount';
 
     /**
      * @var string

@@ -10,20 +10,15 @@ use DateTimeImmutable;
 
 class CancelItem
 {
-    private const
-        CANCEL_ID = 'cancel_id';
+    private const CANCEL_ID = 'cancel_id';
 
-    private const
-        ORDER_ID = 'order_id';
+    private const ORDER_ID = 'order_id';
 
-    private const
-        TOTAL_AMOUNT = 'total_amount';
+    private const TOTAL_AMOUNT = 'total_amount';
 
-    private const
-        ITEMS = 'items';
+    private const ITEMS = 'items';
 
-    private const
-        CREATED_AT = 'created_at';
+    private const CREATED_AT = 'created_at';
 
     /**
      * @var string

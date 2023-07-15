@@ -6,11 +6,9 @@ namespace AlazziAz\Tamara\Tamara\Model;
 
 class Money
 {
-    public const
-        AMOUNT = 'amount';
+    public const AMOUNT = 'amount';
 
-    public const
-        CURRENCY = 'currency';
+    public const CURRENCY = 'currency';
 
     /**
      * @var float
@@ -38,17 +36,11 @@ class Money
         return $this->currency;
     }
 
-    /**
-     * @param  float  $amount
-     */
     public function setAmount(float $amount): void
     {
         $this->amount = $amount;
     }
 
-    /**
-     * @param  string  $currency
-     */
     public function setCurrency(string $currency): void
     {
         $this->currency = $currency;
@@ -66,7 +58,6 @@ class Money
     }
 
     /**
-     * @param  array  $data
      * @return Money
      */
     public static function fromArray(array $data)

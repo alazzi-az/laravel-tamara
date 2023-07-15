@@ -8,20 +8,15 @@ use AlazziAz\Tamara\Tamara\Model\Money;
 
 class PaymentType
 {
-    public const
-        NAME = 'name';
+    public const NAME = 'name';
 
-    public const
-        DESCRIPTION = 'description';
+    public const DESCRIPTION = 'description';
 
-    public const
-        MIN_LIMIT = 'min_limit';
+    public const MIN_LIMIT = 'min_limit';
 
-    public const
-        MAX_LIMIT = 'max_limit';
+    public const MAX_LIMIT = 'max_limit';
 
-    public const
-        SUPPORTED_INSTALMENTS = 'supported_instalments';
+    public const SUPPORTED_INSTALMENTS = 'supported_instalments';
 
     private $name;
 

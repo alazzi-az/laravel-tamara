@@ -24,11 +24,6 @@ class HttpClient
      */
     private $transport;
 
-    /**
-     * @param  string  $apiUrl
-     * @param  string  $apiToken
-     * @param  ClientInterface  $transport
-     */
     public function __construct(
         string $apiUrl,
         string $apiToken,
@@ -40,10 +35,6 @@ class HttpClient
     }
 
     /**
-     * @param  string  $path
-     * @param  array  $params
-     * @return ResponseInterface
-     *
      * @throws ClientExceptionInterface
      * @throws RequestException
      */
@@ -53,10 +44,6 @@ class HttpClient
     }
 
     /**
-     * @param  string  $path
-     * @param  array  $params
-     * @return ResponseInterface
-     *
      * @throws ClientExceptionInterface
      */
     public function put(string $path, array $params = []): ResponseInterface
@@ -65,10 +52,6 @@ class HttpClient
     }
 
     /**
-     * @param  string  $path
-     * @param  array  $params
-     * @return ResponseInterface
-     *
      * @throws ClientExceptionInterface
      */
     public function post(string $path, array $params = []): ResponseInterface
@@ -77,10 +60,6 @@ class HttpClient
     }
 
     /**
-     * @param  string  $path
-     * @param  array  $params
-     * @return ResponseInterface
-     *
      * @throws ClientExceptionInterface
      */
     public function delete(string $path, array $params = []): ResponseInterface
@@ -89,11 +68,6 @@ class HttpClient
     }
 
     /**
-     * @param  string  $method
-     * @param  string  $path
-     * @param  array  $params
-     * @return ResponseInterface
-     *
      * @throws ClientExceptionInterface|RequestException
      */
     private function request(string $method, string $path, array $params = []): ResponseInterface
@@ -133,20 +107,11 @@ class HttpClient
 
     }
 
-    /**
-     * @param  string  $path
-     * @return string
-     */
     private function prepareUrl(string $path): string
     {
         return $this->apiUrl.'/'.ltrim($path, '/');
     }
 
-    /**
-     * @param  string  $path
-     * @param  array  $params
-     * @return string
-     */
     private function prepareQueryString(string $path, array $params = []): string
     {
         if (! $params) {

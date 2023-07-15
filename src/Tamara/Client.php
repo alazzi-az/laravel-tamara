@@ -50,18 +50,11 @@ class Client
      */
     private $requestDispatcher;
 
-    /**
-     * @param  Configuration  $configuration
-     * @return Client
-     */
     public static function create(Configuration $configuration): Client
     {
         return new self($configuration->createHttpClient());
     }
 
-    /**
-     * @param  HttpClient  $httpClient
-     */
     public function __construct(HttpClient $httpClient)
     {
         $this->httpClient = $httpClient;
@@ -69,10 +62,6 @@ class Client
     }
 
     /**
-     * @param  string  $countryCode
-     * @param  string  $currency
-     * @return GetPaymentTypesResponse
-     *
      * @throws RequestDispatcherException
      */
     public function getPaymentTypes(string $countryCode, string $currency = ''): GetPaymentTypesResponse
@@ -81,9 +70,6 @@ class Client
     }
 
     /**
-     * @param  GetPaymentTypesV2Request  $request
-     * @return GetPaymentTypesResponse
-     *
      * @throws RequestDispatcherException
      */
     public function getPaymentTypesV2(GetPaymentTypesV2Request $request): GetPaymentTypesResponse
@@ -92,9 +78,6 @@ class Client
     }
 
     /**
-     * @param  CreateCheckoutRequest  $createCheckoutRequest
-     * @return CreateCheckoutResponse
-     *
      * @throws RequestDispatcherException
      */
     public function createCheckout(CreateCheckoutRequest $createCheckoutRequest): CreateCheckoutResponse
@@ -103,9 +86,6 @@ class Client
     }
 
     /**
-     * @param  AuthoriseOrderRequest  $authoriseOrderRequest
-     * @return AuthoriseOrderResponse
-     *
      * @throws RequestDispatcherException
      */
     public function authoriseOrder(AuthoriseOrderRequest $authoriseOrderRequest): AuthoriseOrderResponse
@@ -114,9 +94,6 @@ class Client
     }
 
     /**
-     * @param  CancelOrderRequest  $cancelOrderRequest
-     * @return CancelResponse
-     *
      * @throws RequestDispatcherException
      */
     public function cancelOrder(CancelOrderRequest $cancelOrderRequest): CancelResponse
@@ -125,9 +102,6 @@ class Client
     }
 
     /**
-     * @param  CaptureRequest  $captureRequest
-     * @return CaptureResponse
-     *
      * @throws RequestDispatcherException
      */
     public function capture(CaptureRequest $captureRequest): CaptureResponse
@@ -136,9 +110,6 @@ class Client
     }
 
     /**
-     * @param  RefundRequest  $refundRequest
-     * @return RefundResponse
-     *
      * @throws RequestDispatcherException
      */
     public function refund(RefundRequest $refundRequest): RefundResponse
@@ -147,9 +118,6 @@ class Client
     }
 
     /**
-     * @param  RegisterWebhookRequest  $request
-     * @return RegisterWebhookResponse
-     *
      * @throws RequestDispatcherException
      */
     public function registerWebhook(RegisterWebhookRequest $request): RegisterWebhookResponse
@@ -158,9 +126,6 @@ class Client
     }
 
     /**
-     * @param  RetrieveWebhookRequest  $request
-     * @return RetrieveWebhookResponse
-     *
      * @throws RequestDispatcherException
      */
     public function retrieveWebhook(RetrieveWebhookRequest $request): RetrieveWebhookResponse
@@ -169,9 +134,6 @@ class Client
     }
 
     /**
-     * @param  RemoveWebhookRequest  $request
-     * @return RemoveWebhookResponse
-     *
      * @throws RequestDispatcherException
      */
     public function removeWebhook(RemoveWebhookRequest $request): RemoveWebhookResponse
@@ -180,9 +142,6 @@ class Client
     }
 
     /**
-     * @param  UpdateWebhookRequest  $request
-     * @return UpdateWebhookResponse
-     *
      * @throws RequestDispatcherException
      */
     public function updateWebhook(UpdateWebhookRequest $request): UpdateWebhookResponse
@@ -191,9 +150,6 @@ class Client
     }
 
     /**
-     * @param  UpdateReferenceIdRequest  $request
-     * @return UpdateReferenceIdResponse
-     *
      * @throws RequestDispatcherException
      */
     public function updateOrderReferenceId(UpdateReferenceIdRequest $request): UpdateReferenceIdResponse
@@ -202,9 +158,6 @@ class Client
     }
 
     /**
-     * @param  GetOrderByReferenceIdRequest  $request
-     * @return GetOrderByReferenceIdResponse
-     *
      * @throws RequestDispatcherException
      */
     public function getOrderByReferenceId(GetOrderByReferenceIdRequest $request): GetOrderByReferenceIdResponse
@@ -215,8 +168,6 @@ class Client
     /**
      * Get order details by tamara order id
      *
-     * @param  GetOrderRequest  $request
-     * @return GetOrderResponse
      *
      * @throws RequestDispatcherException
      */
