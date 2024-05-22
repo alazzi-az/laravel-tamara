@@ -7,7 +7,7 @@ use Psr\Log\LoggerInterface;
 
 class AdapterFactory
 {
-    public static function create(int $requestTimeout, LoggerInterface $logger = null): ClientInterface
+    public static function create(int $requestTimeout, ?LoggerInterface $logger = null): ClientInterface
     {
         // have an issue with psr7 stream (empty request body)
         if (class_exists(Request::class)) {

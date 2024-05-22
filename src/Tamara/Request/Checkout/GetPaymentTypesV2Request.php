@@ -49,10 +49,10 @@ class GetPaymentTypesV2Request
     public function __construct(
         Money $totalAmount,
         string $countryCode,
-        OrderItemCollection $items = null,
-        Consumer $consumer = null,
-        Address $shippingAddress = null,
-        RiskAssessment $riskAssessment = null,
+        ?OrderItemCollection $items = null,
+        ?Consumer $consumer = null,
+        ?Address $shippingAddress = null,
+        ?RiskAssessment $riskAssessment = null,
         ?array $additionalData = []
     ) {
         $this->totalAmount = $totalAmount;

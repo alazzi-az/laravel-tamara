@@ -72,7 +72,7 @@ class HttpClient
      */
     private function request(string $method, string $path, array $params = []): ResponseInterface
     {
-        if ('GET' === $method) {
+        if ($method === 'GET') {
             $path = $this->prepareQueryString($path, $params);
         }
 
@@ -118,7 +118,7 @@ class HttpClient
             return $path;
         }
 
-        $path .= false === strpos($path, '?') ? '?' : '&';
+        $path .= strpos($path, '?') === false ? '?' : '&';
         $path .= http_build_query($params, '', '&');
 
         return $path;

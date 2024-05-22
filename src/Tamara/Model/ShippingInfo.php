@@ -39,8 +39,8 @@ class ShippingInfo
     public function __construct(
         DateTimeImmutable $shippedAt,
         string $shippingCompany,
-        string $trackingNumber = null,
-        string $trackingUrl = null
+        ?string $trackingNumber = null,
+        ?string $trackingUrl = null
     ) {
         $this->shippedAt = $shippedAt;
         $this->shippingCompany = $shippingCompany;

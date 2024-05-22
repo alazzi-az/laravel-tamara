@@ -30,7 +30,7 @@ class GuzzleHttpAdapter implements ClientInterface
      */
     protected $logger;
 
-    public function __construct(int $requestTimeout, LoggerInterface $logger = null)
+    public function __construct(int $requestTimeout, ?LoggerInterface $logger = null)
     {
         $this->client = new Client();
         $this->requestTimeout = $requestTimeout;
@@ -66,7 +66,7 @@ class GuzzleHttpAdapter implements ClientInterface
                 ]
             );
         } catch (Throwable|GuzzleException|GuzzleRequestException $exception) {
-            if (null !== $this->logger) {
+            if ($this->logger !== null) {
                 $this->logger->error($exception->getMessage(), $exception->getTrace());
             }
 

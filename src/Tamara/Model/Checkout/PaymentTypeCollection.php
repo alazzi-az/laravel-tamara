@@ -10,7 +10,7 @@ use ArrayIterator;
 use Countable;
 use IteratorAggregate;
 
-class PaymentTypeCollection implements IteratorAggregate, Countable
+class PaymentTypeCollection implements Countable, IteratorAggregate
 {
     private const NAME = 'name';
 

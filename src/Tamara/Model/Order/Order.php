@@ -403,7 +403,7 @@ class Order
 
     public function isInstalments(): bool
     {
-        return self::PAY_BY_INSTALMENTS === $this->getPaymentType();
+        return $this->getPaymentType() === self::PAY_BY_INSTALMENTS;
     }
 
     public function getExpiresInMinutes(): int

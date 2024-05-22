@@ -37,9 +37,9 @@ class Configuration
     public static function create(
         string $apiUrl,
         string $apiToken,
-        int $apiRequestTimeout = null,
-        LoggerInterface $logger = null,
-        ClientInterface $transport = null
+        ?int $apiRequestTimeout = null,
+        ?LoggerInterface $logger = null,
+        ?ClientInterface $transport = null
     ): Configuration {
         return new self($apiUrl, $apiToken, $apiRequestTimeout, $logger, $transport);
     }
@@ -47,14 +47,14 @@ class Configuration
     public function __construct(
         string $apiUrl,
         string $apiToken,
-        int $apiRequestTimeout = null,
-        LoggerInterface $logger = null,
-        ClientInterface $transport = null
+        ?int $apiRequestTimeout = null,
+        ?LoggerInterface $logger = null,
+        ?ClientInterface $transport = null
     ) {
         $this->apiUrl = $apiUrl;
         $this->apiToken = $apiToken;
 
-        if (null !== $apiRequestTimeout) {
+        if ($apiRequestTimeout !== null) {
             $this->apiRequestTimeout = $apiRequestTimeout;
         }
 

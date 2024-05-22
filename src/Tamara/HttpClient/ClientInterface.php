@@ -9,11 +9,11 @@ use Psr\Http\Message\UriInterface;
 interface ClientInterface extends \Psr\Http\Client\ClientInterface
 {
     /**
-     * @param  string  $method HTTP method
-     * @param  string|UriInterface  $uri URI
-     * @param  array  $headers Request headers
-     * @param  string|null|resource|StreamInterface  $body Request body
-     * @param  string  $version Protocol version
+     * @param  string  $method  HTTP method
+     * @param  string|UriInterface  $uri  URI
+     * @param  array  $headers  Request headers
+     * @param  string|null|resource|StreamInterface  $body  Request body
+     * @param  string  $version  Protocol version
      */
     public function createRequest(
         string $method,

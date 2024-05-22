@@ -24,7 +24,7 @@ class RequestException extends Exception implements RequestExceptionInterface
         int $code,
         RequestInterface $request,
         ?ResponseInterface $response,
-        Exception $previous = null
+        ?Exception $previous = null
     ) {
         parent::__construct($message, $code, $previous);
         $this->request = $request;

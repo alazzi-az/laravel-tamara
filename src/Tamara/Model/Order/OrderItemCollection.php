@@ -8,7 +8,7 @@ use ArrayIterator;
 use Countable;
 use IteratorAggregate;
 
-class OrderItemCollection implements IteratorAggregate, Countable
+class OrderItemCollection implements Countable, IteratorAggregate
 {
     /**
      * @var array|OrderItem[]
