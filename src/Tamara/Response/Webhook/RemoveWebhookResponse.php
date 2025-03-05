@@ -8,7 +8,5 @@ use AlazziAz\Tamara\Tamara\Response\ClientResponse;
 
 class RemoveWebhookResponse extends ClientResponse
 {
-    protected function parse(array $responseData): void
-    {
-    }
+    protected function parse(array $responseData): void {}
 }

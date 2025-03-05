@@ -47,7 +47,7 @@ class RefundItem
 
     public static function fromArray(array $data): RefundItem
     {
-        $self = new self();
+        $self = new self;
         $self->setRefundId($data[self::REFUND_ID]);
         $self->setCaptureId($data[self::CAPTURE_ID]);
         $self->setItems(OrderItemCollection::create($data[self::ITEMS]));

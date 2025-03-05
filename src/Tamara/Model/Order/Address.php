@@ -71,7 +71,7 @@ class Address
 
     public static function fromArray(array $data): Address
     {
-        $self = new self();
+        $self = new self;
         $self->setFirstName($data[self::FIRST_NAME]);
         $self->setLastName($data[self::LAST_NAME]);
         $self->setLine1($data[self::LINE1]);

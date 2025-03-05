@@ -29,7 +29,7 @@ class Transactions
 
     public static function fromArray(array $data): Transactions
     {
-        $self = new self();
+        $self = new self;
         $self->setCancels(CancelCollection::create($data[self::CANCELS]));
         $self->setCaptures(CaptureCollection::create($data[self::CAPTURES]));
         $self->setRefunds(RefundCollection::create($data[self::REFUNDS]));

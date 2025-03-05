@@ -80,7 +80,7 @@ class OrderItem
 
     public static function fromArray(array $data): OrderItem
     {
-        $self = new self();
+        $self = new self;
         $self->setName($data[self::NAME]);
         $self->setReferenceId($data[self::REFERENCE_ID]);
         $self->setSku($data[self::SKU] ?? '');

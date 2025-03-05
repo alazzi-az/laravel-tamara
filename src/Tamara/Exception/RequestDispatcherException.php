@@ -6,6 +6,4 @@ namespace AlazziAz\Tamara\Tamara\Exception;
 
 use Exception;
 
-class RequestDispatcherException extends Exception
-{
-}
+class RequestDispatcherException extends Exception {}

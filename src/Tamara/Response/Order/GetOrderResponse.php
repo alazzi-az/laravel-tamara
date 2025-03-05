@@ -2,6 +2,4 @@
 
 namespace AlazziAz\Tamara\Tamara\Response\Order;
 
-class GetOrderResponse extends GetOrderByReferenceIdResponse
-{
-}
+class GetOrderResponse extends GetOrderByReferenceIdResponse {}

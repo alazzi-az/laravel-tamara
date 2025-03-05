@@ -17,7 +17,7 @@ class OrderItemCollection implements Countable, IteratorAggregate
 
     public static function create(array $data): OrderItemCollection
     {
-        $self = new self();
+        $self = new self;
         foreach ($data as $itemData) {
             $self->data[] = OrderItem::fromArray($itemData);
         }

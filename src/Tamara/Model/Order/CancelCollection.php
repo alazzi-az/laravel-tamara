@@ -15,7 +15,7 @@ class CancelCollection
 
     public static function create(array $data): CancelCollection
     {
-        $self = new self();
+        $self = new self;
         foreach ($data as $itemData) {
             $self->data[] = CancelItem::fromArray($itemData);
         }

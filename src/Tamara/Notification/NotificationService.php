@@ -19,7 +19,7 @@ class NotificationService
 
     public static function create(string $tokenKey): NotificationService
     {
-        $self = new self();
+        $self = new self;
         $self->tokenKey = $tokenKey;
 
         return $self;

@@ -83,7 +83,7 @@ class CaptureItem
 
     public static function fromArray(array $data): CaptureItem
     {
-        $self = new self();
+        $self = new self;
         $self->setCaptureId($data[self::CAPTURE_ID]);
         $self->setOrderId($data[self::ORDER_ID]);
         $self->setTotalAmount(Money::fromArray($data[self::TOTAL_AMOUNT]));

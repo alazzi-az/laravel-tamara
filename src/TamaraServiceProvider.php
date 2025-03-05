@@ -28,7 +28,7 @@ class TamaraServiceProvider extends PackageServiceProvider
         });
 
         $this->app->singleton(MerchantUrl::class, function () {
-            $merchantUrl = new MerchantUrl();
+            $merchantUrl = new MerchantUrl;
 
             $merchantUrl->setSuccessUrl(config('tamara.success_url'));
             $merchantUrl->setFailureUrl(config('tamara.failure_url'));

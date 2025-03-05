@@ -32,7 +32,7 @@ class GuzzleHttpAdapter implements ClientInterface
 
     public function __construct(int $requestTimeout, ?LoggerInterface $logger = null)
     {
-        $this->client = new Client();
+        $this->client = new Client;
         $this->requestTimeout = $requestTimeout;
         $this->logger = $logger;
     }

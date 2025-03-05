@@ -15,7 +15,7 @@ class RefundCollection
 
     public static function create(array $data): RefundCollection
     {
-        $self = new self();
+        $self = new self;
         foreach ($data as $itemData) {
             $self->data[] = RefundItem::fromArray($itemData);
         }

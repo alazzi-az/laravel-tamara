@@ -47,7 +47,7 @@ class CancelItem
 
     public static function fromArray(array $data): CancelItem
     {
-        $self = new self();
+        $self = new self;
         $self->setCancelId($data[self::CANCEL_ID]);
         $self->setOrderId($data[self::CANCEL_ID]);
         $self->setItems(OrderItemCollection::create($data[self::ITEMS]));

@@ -15,7 +15,7 @@ class CaptureCollection
 
     public static function create(array $data): CaptureCollection
     {
-        $self = new self();
+        $self = new self;
         foreach ($data as $itemData) {
             $self->data[] = CaptureItem::fromArray($itemData);
         }
